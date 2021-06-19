@@ -1,5 +1,6 @@
 
 const BLOG_PORT = process.env.BLOG_PORT
+const isProduction = process.env.NODE_ENV === "production"
 
 module.exports = {
 
@@ -12,4 +13,5 @@ module.exports = {
      'vuetify'
    ],
    outputDir: 'docs',
+   assetsDir: isProduction ? 'static' : 'assets'
 }
