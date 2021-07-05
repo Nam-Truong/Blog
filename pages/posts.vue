@@ -7,7 +7,7 @@
 
 <script>
   export default {
-    // layout: 'blog'
+    layout: 'blog'
     // page component definitions
   }
 </script>
