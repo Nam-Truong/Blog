@@ -2,7 +2,8 @@ export default {
     buildModules: ['@nuxt/typescript-build'],
 
     generate: {
-        dir: 'docs'
+        dir: 'docs',
+        // routes: ['404']
     },
 
     head: {
