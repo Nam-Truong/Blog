@@ -3,7 +3,6 @@ export default {
 
     generate: {
         dir: 'docs',
-        // routes: ['404']
     },
 
     head: {
