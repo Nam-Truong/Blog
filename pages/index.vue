@@ -1,7 +1,6 @@
 <template>
   <div>
     <img class="img" alt="Vue logo" src="../assets/IMG_5913.jpg">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <Nuxt />
   </div>
 </template>

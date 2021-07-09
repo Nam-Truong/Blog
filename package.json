@@ -3,15 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "nuxt:dev": "nuxt-ts",
-    "nuxt:build": "nuxt build",
-    "nuxt:generate": "nuxt generate",
-    "nuxt:start": "nuxt start"
+    "dev": "nuxt-ts",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
   },
   "dependencies": {
+    "@nuxt/content": "^1.14.0",
     "@nuxt/typescript-runtime": "^2.1.0",
     "core-js": "^3.6.5",
     "nuxt": "^2.15.7",

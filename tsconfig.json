@@ -15,7 +15,9 @@
     "baseUrl": ".",
     "types": [
       "@types/node",
-      "@nuxt/types"
+      "@nuxt/types",
+      "@nuxt/vue-app",
+      "@nuxtjs/vuetify"
     ],
     "paths": {
       "@/*": [
