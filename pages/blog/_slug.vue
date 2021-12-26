@@ -72,6 +72,12 @@
     margin-bottom: 20px;
   }
 
+  .nuxt-content  {
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
   .icon.icon-link {
     background-image: url('~assets/svg/icon-hashtag.svg');
     display: inline-block;
