@@ -38,7 +38,7 @@ export default {
       },
     
     // static: {
-    //     prefix: true 
+    //     prefix: true
     // },
 
     target: 'static'
