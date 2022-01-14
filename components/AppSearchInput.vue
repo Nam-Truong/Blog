@@ -4,7 +4,8 @@
       v-model="searchQuery"
       type="search"
       autocomplete="off"
-      placeholder="Search Articles"
+      placeholder="Enter your keywords here to search my blog posts"
+      style="width: 60%; font-size: 24px;"
     />
     <ul v-if="articles.length">
       <li v-for="article of articles" :key="article.slug">

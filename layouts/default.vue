@@ -1,29 +1,34 @@
 <template>
   <v-app>
+    
+
     <v-container id="app" class="grey lighten-5 mb-6">
-      <v-row id="nav" justify="center">
-        <v-col>
-          <NuxtLink to="/Home">
-            <v-card class="pa-2">
-              Home
-            </v-card>
-          </NuxtLink>
-        </v-col>
-        <v-col>
-          <NuxtLink to="/blog/Index">
-            <v-card class="pa-2" tile>
-              My Blog
-            </v-card>
-          </NuxtLink>
-        </v-col>
-        <v-col md="4">
-          <NuxtLink to="/About">
-            <v-card class="pa-2" tile>
-              About
-            </v-card>
-          </NuxtLink>
-        </v-col>
+      <v-row id="nav" justify="center" >
+        <v-app-bar fixed dense scroll-target="#scroll">
+          <v-col>
+            <NuxtLink to="/Home">
+              <v-card class="pa-2">
+                Home
+              </v-card>
+            </NuxtLink>
+          </v-col>
+          <v-col>
+            <NuxtLink to="/blog/Index">
+              <v-card class="pa-2" tile>
+                My Blog
+              </v-card>
+            </NuxtLink>
+          </v-col>
+          <v-col md="4">
+            <NuxtLink to="/About">
+              <v-card class="pa-2" tile>
+                About
+              </v-card>
+            </NuxtLink>
+          </v-col>
+        </v-app-bar>
       </v-row>
+
       <v-row>
         <v-main class='main-container'>
           <Nuxt />

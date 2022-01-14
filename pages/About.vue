@@ -1,7 +1,10 @@
 <template>
   <div class="about">
+
+    <v-row style="height: 100px"></v-row>
     <h1>Welcome to Nam's Blog!</h1>
 
+    <v-row style="height: 200px"></v-row>
     <v-btn
       color="white"
       value="feed"
@@ -13,7 +16,7 @@
       <v-icon>Nam Truong</v-icon>
     </v-btn>
     
-
+    <v-row style="height: 100px"></v-row>
     <v-text-field v-model="$store.state.counter" placeholder="Hey, this is Text-Field" disabled>  </v-text-field>
     <v-divider />
     <v-btn block elevation="2" color="primary" @click="increment()" >Increase counter</v-btn>

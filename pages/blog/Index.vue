@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    <v-row style="height: 20px"></v-row>
     <v-row justify="center">
       <br>
       <NuxtLink to="/blog/ArticlesSearch">Search blog posts</NuxtLink>

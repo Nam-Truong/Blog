@@ -1,6 +1,8 @@
 <template>
+    
     <div>
-        <app-search-input> </app-search-input>
+        <v-row style="height: 100px"></v-row>
+        <app-search-input > </app-search-input>
     </div>
 </template>
 
