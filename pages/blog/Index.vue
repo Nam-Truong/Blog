@@ -14,8 +14,9 @@
       <v-container>
         <v-row justify="center" v-for="article of articles" :key="article.slug">
 
-          <v-col md='4'><img class='img' :src="article.img" /></v-col>
-          <v-col md='4'>
+          <v-col md='2'>{{ article.createdAt }}</v-col>
+          <v-col md='1'><img class='img' :src="article.img" /></v-col>
+          <v-col md='5'>
             <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
               <h2>{{ article.title }}</h2>
             </NuxtLink>
@@ -48,8 +49,8 @@ export default class BlogIndex extends Vue {
                     {$content: any, params: any}) {
 
     const articles = await $content('articles', params.slug)
-      .only(['title', 'description', 'img', 'slug', 'author'])
-      .sortBy('createdAt', 'asc')
+      .only(['title', 'description', 'img', 'slug', 'author', 'createdAt'])
+      .sortBy('createdAt', 'desc')
       .fetch()
     
     
