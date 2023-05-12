@@ -1,24 +1,30 @@
-# blog
-  
+# Blog
+
 ## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+1. System requirements:
+  
+    - nodejs: v10.24.1 (preferred)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+2. Development:
 
-### Lints and fixes files
-```
-npm run lint
-```
+    ```
+    npm run build
+    npm run dev
+    ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+    **OR**
+
+    ```
+    npm run build
+    npm run start
+    ```
+
+3. Deployment:
+
+    Create static HTML/CSS files inside directory _./docs_
+    ```
+    npm run generate
+    ```
+
+    **Note**: Do Not Remove The File _./docs/CNAME_
