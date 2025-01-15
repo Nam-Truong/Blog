@@ -15,7 +15,7 @@
       <v-container>
         <v-row justify="center" v-for="article of articles" :key="article.slug">
 
-          <v-col md='2'>{{ article.createdAt }}</v-col>
+          <v-col md='2'>{{ formatDate(article.createdAt) }}</v-col>
           <v-col md='1'><img class='img' :src="article.img" /></v-col>
           <v-col md='5'>
             <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
@@ -41,6 +41,8 @@ import { Vue, Component } from 'nuxt-property-decorator'
   }
 })
 export default class BlogIndex extends Vue {
+
+  
 
   async mounted() {
     document.title = 'Nam-Truong Blog | Blog Posts'
@@ -69,6 +71,18 @@ export default class BlogIndex extends Vue {
       articles
     }
   }
+
+  
+  formatDate(date:any) {
+      const options:any = { year: 'numeric', 
+                        month: 'long', 
+                        day: 'numeric', 
+                        hour: 'numeric', 
+                        minute: 'numeric' }
+      const formatedDateTime = new Date(date).toLocaleDateString('en', options) 
+      return  formatedDateTime 
+  }
+      
 }
 </script>
 

@@ -5,7 +5,7 @@
     <h1>{{ article.title }}</h1>
     <p>{{ article.description }}</p>
     <img class='imga' :src="article.img" :alt="article.alt" />
-    <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+    <p>last updated at: {{ formatDate(article.updatedAt) }}</p>
 
 
     <nuxt-content :document="article" />
@@ -52,7 +52,12 @@
 
     methods: {
         formatDate(date) {
-            const options = { year: 'numeric', month: 'long', day: 'numeric' }
+            const options = { year: 'numeric', 
+                              month: 'long', 
+                              day: 'numeric', 
+                              hour: 'numeric', 
+                              minute: 'numeric' }
+
             return new Date(date).toLocaleDateString('en', options)
         }
     }

@@ -1,12 +1,12 @@
 ---
 title: Gitlab Pipeline Cleaning Up
 description: Clean Up Pipelines
-img: /blog/images/my-first-blog-post/first-post-image.jpg
+img: /blog/images/20220603-gitlab-pipelines-cleanup/gitLab_logo.png
 alt: Clean Up Pipelines
 author: nam-truong-1990
 ---
 
-# Remove All Gitlab Pipelines Except A Specific Number of Recently-Run Ones
+## Remove All Gitlab Pipelines Except A Specific Number of Recently-Run Ones
 
 ```shell
 #!/bin/bash
@@ -37,7 +37,7 @@ do
 done
 ```
 
-# How to execute the script
+## How to execute the script
 
 Suppose that the script is saved as _cleanup_pipelines.sh_, by executing it as below, we will delete all pipelines of project with id of **10**, except **3** recently-run ones:
 
